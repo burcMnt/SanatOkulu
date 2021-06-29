@@ -37,20 +37,20 @@ namespace SanatOkulu
             this.mtbYil = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnEkle = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvwEserler = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pboYeniSanatci = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboYeniSanatci)).BeginInit();
             this.SuspendLayout();
             // 
             // txtAd
             // 
             this.txtAd.Location = new System.Drawing.Point(31, 40);
             this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(189, 22);
+            this.txtAd.Size = new System.Drawing.Size(242, 22);
             this.txtAd.TabIndex = 1;
             // 
             // label2
@@ -94,12 +94,12 @@ namespace SanatOkulu
             this.mtbYil.Location = new System.Drawing.Point(31, 161);
             this.mtbYil.Mask = "####";
             this.mtbYil.Name = "mtbYil";
-            this.mtbYil.Size = new System.Drawing.Size(189, 22);
+            this.mtbYil.Size = new System.Drawing.Size(242, 22);
             this.mtbYil.TabIndex = 6;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.pboYeniSanatci);
             this.groupBox1.Controls.Add(this.btnEkle);
             this.groupBox1.Controls.Add(this.txtAd);
             this.groupBox1.Controls.Add(this.mtbYil);
@@ -117,31 +117,31 @@ namespace SanatOkulu
             // btnEkle
             // 
             this.btnEkle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEkle.Location = new System.Drawing.Point(145, 232);
+            this.btnEkle.Location = new System.Drawing.Point(198, 203);
             this.btnEkle.Name = "btnEkle";
             this.btnEkle.Size = new System.Drawing.Size(75, 23);
             this.btnEkle.TabIndex = 7;
             this.btnEkle.Text = "EKLE";
             this.btnEkle.UseVisualStyleBackColor = true;
             // 
-            // listView1
+            // lvwEserler
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvwEserler.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(309, 33);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(494, 409);
-            this.listView1.TabIndex = 8;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.lvwEserler.HideSelection = false;
+            this.lvwEserler.Location = new System.Drawing.Point(309, 33);
+            this.lvwEserler.Name = "lvwEserler";
+            this.lvwEserler.Size = new System.Drawing.Size(494, 409);
+            this.lvwEserler.TabIndex = 8;
+            this.lvwEserler.UseCompatibleStateImageBehavior = false;
+            this.lvwEserler.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "Ad";
-            this.columnHeader1.Width = 135;
+            this.columnHeader1.Width = 111;
             // 
             // columnHeader2
             // 
@@ -153,29 +153,29 @@ namespace SanatOkulu
             this.columnHeader3.Text = "Yıl";
             this.columnHeader3.Width = 128;
             // 
-            // pictureBox1
+            // pboYeniSanatci
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::SanatOkulu.Properties.Resources.perspective;
-            this.pictureBox1.Location = new System.Drawing.Point(226, 99);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.pboYeniSanatci.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pboYeniSanatci.Image = global::SanatOkulu.Properties.Resources.plus;
+            this.pboYeniSanatci.Location = new System.Drawing.Point(226, 99);
+            this.pboYeniSanatci.Name = "pboYeniSanatci";
+            this.pboYeniSanatci.Size = new System.Drawing.Size(47, 24);
+            this.pboYeniSanatci.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pboYeniSanatci.TabIndex = 8;
+            this.pboYeniSanatci.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(815, 454);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.lvwEserler);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Sanat Okulu";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboYeniSanatci)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -189,9 +189,9 @@ namespace SanatOkulu
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.MaskedTextBox mtbYil;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pboYeniSanatci;
         private System.Windows.Forms.Button btnEkle;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvwEserler;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
